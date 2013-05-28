@@ -20,7 +20,7 @@
 # definition file).
 #
 
-# inherit from common D2
+# inherit from common JF
 -include device/samsung/jf-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
@@ -31,4 +31,6 @@ TARGET_OTA_ASSERT_DEVICE := jfltespr
 
 # Kernel
 TARGET_KERNEL_CONFIG         := jf_spr_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := cyanogen_jf_defconfig
+TARGET_KERNEL_SELINUX_CONFIG := jfselinux_defconfig
 
